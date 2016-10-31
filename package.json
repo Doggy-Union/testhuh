@@ -18,13 +18,12 @@
     "type": "git",
     "url": "https://github.com/openshift/origin-server"
   },
-  "dependencies": {
-    "etag": ""
-  },
   "private": true,
   "scripts": {
     "start": "node main.js"
   },
-
-  "main": "main.js"
+  "main": "main.js",
+  "dependencies": {
+    "etag": "^1.7.0"
+  }
 }
