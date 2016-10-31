@@ -9,7 +9,6 @@ const server_port = (process.env.OPENSHIFT_NODEJS_PORT || 8080);
 const server_ip_address = (process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
 const zlib = require('zlib');
 const gzip = zlib.createGzip();
-const etag = require('etag');
 var root_path = process.argv[1].split('\\');
 root_path.pop();
 root_path = root_path.join('/');
