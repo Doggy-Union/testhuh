@@ -33,6 +33,7 @@ body {
 	min-height: 100%;
 	margin: 0;
 	font-size: 16px;
+	overflow: hidden;
 }
 
 header.outside {
