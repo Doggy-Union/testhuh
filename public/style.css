@@ -33,7 +33,6 @@ body {
 	min-height: 100%;
 	margin: 0;
 	font-size: 16px;
-	overflow: hidden;
 }
 
 header.outside {
@@ -751,6 +750,7 @@ footer#out span.text {
 	height: 220px;
 	margin: auto;
 	padding-bottom: 175px;
+	overflow: hidden;
 }
 
 footer#out form {
