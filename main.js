@@ -26,6 +26,7 @@ http.createServer((req, res) => {
 				}
 				else {
 					res.statusCode = 304;
+					console.log("HTML isn't modified (test of tail)")
 					res.end();
 				}
 			});
