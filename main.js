@@ -87,7 +87,7 @@ http.createServer((req, res) => {
 					if (!(req.headers['if-none-match'] == `${etag(css, {weak: true})}`)) {
 						var now = new Date();
 						now.setDate(now.getDate() + 7);
-						res.writeHead(200, {'Content-Type': 'text/css', 'Expires': now.toUTCString(), 'Cache-Control': 'max-age=604800', 'ETag': `${etag(css, {weak: true})}`});
+						res.writeHead(200, {'Content-Type': 'text/css', 'Expires': now.toUTCString(), 'Cache-Control': 'max-age=0', 'ETag': `${etag(css, {weak: true})}`});
 						res.write(css);
 						res.end();
 					}
