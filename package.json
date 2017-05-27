@@ -11,7 +11,7 @@
     "npm": "latest"
   },
   "scripts": {
-    "start": "web.js"
+    "start": "node web.js"
   },
   "main": "web.js"
 }
