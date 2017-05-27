@@ -4,12 +4,12 @@
   "private": true,
   "dependencies": {
     "keystone": "latest",
-    "underscore": "latest"
+    "underscore": "latest",
+    "jade": "latest"
   },
   "engines": {
     "node": "latest",
-    "npm": "latest",
-    "jade": "latest"
+    "npm": "latest"
   },
   "scripts": {
     "start": "node web.js"
