@@ -1,0 +1,107 @@
+﻿doctype html
+html
+  head
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css')
+    link(rel='stylesheet', href='style.css')
+    link(href='https://fonts.googleapis.com/css?family=Poiret+One', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100', rel='stylesheet')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title The Named Team
+  body
+    header
+      .button
+      h1 The Named Team
+      h2 web-developers team
+      .persons
+        .item1
+          span.name Igor Fedosoff
+        .item2
+          span.name Gorislav Boyarchuk
+      .tale
+        span
+          | Web development is the constantly, fastly evolving field of IT where following the new standards is actually important. But it has to be done very carefully. We choose the technologies that bring simplicity, speed and reliability to the products, considering about support among the users. Web development for us is not just work but our favourite hobby :)
+    .content
+      .portfolio
+        h2
+          | Some of
+          br
+          | our works
+        .swiper-container
+          .swiper-wrapper
+            for work in res
+              .swiper-slide
+                .preview(style="background-image#{work.preview}")
+                a(href=#{work.link})
+                  span.description=work.title
+          .swiper-button-prev
+          .swiper-button-next
+      .contacts
+        h2 Contacts
+        .contactsTable
+          .icons
+            .email
+            .email
+            .skype
+          .data
+            .data-line itgbo1321@gmail.com
+            .data-line kojlambus@gmail.com
+            .data-line ewgogh11
+      footer
+        | Developed by Gorislav Boyarchuk and
+        br
+        |  Igor Fedosoff. All rights are reserved 2017.
+    .hider
+      .menu
+        .menuElement
+          a(href='#footer') Contacts
+        .menuElement Portfolio
+        .menuElement Blog(in dev)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js')
+    script.
+      var buttons = document.querySelector('div.button');
+      var hider = document.querySelector('div.hider');
+      hider.addEventListener('click', hideMenu);
+      function hideMenu(e) {
+      console.log(e.target);
+      if(e.target.classList.contains('hider')) {
+      hider.style.background = 'rgba(0, 0, 0, 0)';
+      setTimeout(function() {
+      hider.style.display = 'none';
+      }, 200);
+      }
+      if(e.target.tagName == 'A') {
+      hider.style.background = 'rgba(0, 0, 0, 0)';
+      setTimeout(function() {
+      hider.style.display = 'none';
+      }, 200);
+      }
+      document.documentElement.style.overflow = 'auto';
+      document.body.scroll = "yes"; // for IE
+      }
+      function showMenu() {
+      hider.style.display = 'flex';
+      hider.style.visibility = 'visible';
+      setTimeout(function() {
+      hider.style.background = 'rgba(0, 0, 0, 0.9)';
+      }, 10);
+      document.documentElement.style.overflow = 'hidden';
+      document.body.scroll = "no"; // for IE
+      }
+      buttons.addEventListener('click', showMenu);
+    script.
+      var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      // Navigation arrows
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      effect: 'coverflow',
+      coverflow: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows : false
+      }
+      })

@@ -1,0 +1,11 @@
+﻿.consolas {
+	font-family: lucida console;
+	text-align: center;
+	display: inline-block;
+	background: darkcyan;
+	color: skyblue;
+}
+.additional {
+	display: inline-block;
+	text-align: center;
+}

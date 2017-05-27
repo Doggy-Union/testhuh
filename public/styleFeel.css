@@ -1,0 +1,543 @@
+﻿.upperSpace {
+	padding: 0 19.6%;
+	color: white;
+	background-color: #373737;
+}
+.upperSpace > * {
+	display:inline-block;
+}
+.mainSpace {
+	background-color: transparent;
+	margin: 0 19.6%;
+}
+.BigGSign {
+	padding: 1.3em 1.65em;
+	text-align: center;
+	display: inline-block;
+	background-color: #f26c4f;
+	color: white;
+	position: relative;
+	margin: 0 0.5em 0 0;
+	font-family: fontawesome;
+	font-weight: bold;
+}
+.BigGSign:after {
+	content:'';
+	position: absolute;
+	border: 0.5em solid transparent;
+	border-left: 0.5em solid #f26c4f;
+	right: -0.9em;
+}
+BODY {
+	background-color: #ebebeb;
+	font-family: open sans;
+	padding-bottom: 0;
+	margin:0;
+}
+.DropdownMenu > .Button {
+	display: inline-block;
+	font-weight: bold;
+	border-left: 1px solid #9c9c9c;
+	padding: 1em;
+	position: relative;
+	vertical-align: middle;
+}
+.TopUniq {
+	color: #9c9c9c;
+	background-color: #ebebeb;
+}
+.TopUniq > div {
+	left: 38%;
+    top: 21%;
+}
+.DropdownMenu > .Button > div {
+	transform: rotate(90deg);
+	position: absolute;
+}
+.DropdownMenu {
+	padding-left: 0.25em;
+	background-color: white;
+	font-weight: bold;
+	color: #9c9c9c;
+}
+.highMenu {
+	margin: 0;
+	padding: 0;
+	background-color: #474747;
+	color: white;
+}
+.highMenu > li, .rightPanel > li {
+	display:inline-block;
+	padding: 0 2.4ex;
+	margin: 2.6ex 0;
+	border-right: 1px solid white;
+}
+.highMenu > li.active > span {
+	border-bottom: solid 4px #f26c4f;
+	padding: 0 0 2.19ex 0;
+}
+.rightPanel {
+	float: right;
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.DropdownMenu > span {
+	margin: 0 0.5em;
+}
+.protovision {
+	transform: rotate(90deg);
+	margin-left: 0.7em;
+    vertical-align: baseline;
+    display: inline-block;
+}
+.searchAndSociety {}
+.searchAndSociety > div {}
+.SSL {
+	background-color: white;
+	padding: 0.3em;
+	display: inline-block;
+	margin: 1em 0;}
+.Middle {
+	background: #8f8f8f !important;
+	border: none !important;
+	color: white !important;
+	font-weight: normal !important;
+	padding: 1.31em !important;
+}
+.Middle > div {
+	left: 41%;
+	top: 27%;
+}
+.SSR {
+	background-color: white;
+	padding: 0.75em;
+	display: inline-block;
+	margin: 1em 0.1em;
+	background-color: transparent;
+	color: #9c9c9c;
+	float: right;
+}
+.metaClear {
+	display: block !important;
+	clear: both !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.HMR {
+	float: right;
+}
+.mainTitle {
+	display: table;
+}
+.mainTitle > div {
+	display: table-cell;
+}
+.bigImage {
+	width: 67%;
+	display: inline-block;
+	border-right: 9px solid #f26c4f;
+	position: relative;
+	vertical-align: bottom;
+}
+.bigImage > img {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.bigImage:after {
+	position: absolute;
+	content: '';
+	border: 1em solid transparent;
+	border-left: 1em solid #f26c4f;
+	top: 10%;
+	right: -37px;
+}
+.textus {
+	height: 100%;
+	background-color: #373737; 
+	vertical-align: top;
+	display: inline-block;
+	background-color: #373737;
+	color: white;
+	text-align: right;
+	width: 32%;
+}
+.BigPlusSign {
+	font-weight: bold;
+	font-size: 24pt;
+	display: inline-block;
+}
+.Navigation > div {
+	display: inline-block;
+	padding: 5px 10px;
+}
+#Slider {
+	margin-top: 1em;
+	position: relative;
+}
+.sliderElement {
+	position: relative;
+	display: inline-block;
+	width: 32%;
+	margin-right: 2%;
+	left: 0%;
+	background-color: white;
+	white-space: normal;
+	vertical-align: top;	
+	opacity: 1;
+	transition: opacity 1s;
+	height: 100%;
+}
+.sliderElement > .mainPicture {
+	width: 100%;
+}
+.sliderLeftArrow {
+	cursor: default;
+	position: absolute;
+	left: -5%;
+	top: 25%;
+	font-size: 32pt;
+	color: grey;
+}
+.sliderRightArrow {
+	cursor: default;
+	position: absolute;
+	right: -5%;
+	top: 25%;
+	font-size: 32pt;
+	color: grey;
+}
+.transit > .sliderElement {
+	transition: left 1s;
+	left: -34.05%;
+}
+.transitRight > .sliderElement {
+	transition: left 1s;
+	left: 34%;
+}
+.transited {
+	opacity: 0;
+	transition: opacity 1s;
+}
+.sliderText > h2 {
+	margin: 0.5em 0;
+}
+.sliderText {
+	margin: 0 1em;
+}
+.sliderElement > .plusButton {
+	position: absolute;
+	color: white;
+	right: 0;
+	top: 0;
+	font-size: 16pt;
+}
+.plusButtonButton {
+	font-size: 16pt;
+	position: absolute;
+	color: white;
+	margin: 0.6em 0.8em 0 0;
+	right: 0;
+	top: 0;
+}
+.plusButtonBackground {
+	font-size: 16pt;
+	right: 0;
+	top: 0;
+	position: absolute;
+	border-left: 2em solid transparent;
+	border-bottom: 2em solid transparent;
+	border-right: 2em solid #373737;
+	border-top: 2em solid #373737;
+}
+.plusButtonBackground.redpbb {
+	border-left: 2em solid transparent;
+	border-bottom: 2em solid transparent;
+	border-right: 2em solid #f26c4f;
+	border-top: 2em solid #f26c4f;
+}
+.sliderMainSpace {
+	overflow: hidden; 
+	white-space: nowrap;
+	height: 50%;
+}
+.rightColumn {
+	float: right;
+	margin-top: 1em;
+	width: 32%;
+}
+.athing {
+	display: inline-block;
+	position: relative;
+	background: #373737;
+}
+.athingText {
+	margin: 0 1em;
+	color: white;
+}
+.athing > .mainPicture {
+	width: 100%;
+}
+.lastPost > h2 {
+	color: #474747;
+	margin-bottom: 0;
+}
+.lastPost {
+	margin: 0 0.8em;
+}
+.lastPost > p {
+	color: #bcbcbc;
+	margin: 0;
+}
+.date {
+	color: #8f8f8f;
+}
+.notSoBig {
+	font-size: 20pt;
+	padding: 0 0.4em;
+	vertical-align: middle;
+}
+.someInfo {
+	background-color: white;
+	font-size: 16pt;
+	font-weight: bold;
+	border-left: 3px solid #d9d9d9;
+	padding: 0.2em 0.5em;
+	margin: 0.2em 0;
+}
+.number {
+	display: inline-block;
+	font-size: 36pt;
+	font-weight: bold;
+	width: 3em;
+	vertical-align: middle;
+}
+.someNumbers > .desc {
+	display: inline-block;
+	vertical-align: middle;
+}
+.desc > img {
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+.leftColumn {
+	margin-top: 1em;
+	width: 66%;
+	
+	display: inline-block;
+}
+.post {
+	background-color: white;
+	color: grey;
+    margin: 1em 0;
+    overflow: hidden;
+}
+.post > h2 {
+	overflow: hidden;
+    width: 95%;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	color: black;
+	margin-bottom: 0.5em;
+}
+.info > div {
+	display: inline-block;
+	border-right: 1px solid gray;
+	margin: 0 0 1.5em 0;
+	padding: 0 0.5em;
+	font-style: italic;
+	font-size: 10pt;
+}
+.info :first-child {
+	padding-left: 0;
+}
+.info :last-child {
+	border: none;
+}
+.score > div {
+	display: inline-block;
+}
+.score > .precisely {
+	vertical-align: middle;
+}
+.post > .prelude {
+	height: 30%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.popular228 {
+	background: #f26c4f;
+	border-left-color: #ce4e32;
+	color: white;
+}
+.popular228 > h2 {
+	color: white;
+}
+.popular228 > .info > div {
+	border-right: 1px solid white;
+}
+.popular228 > .info :last-child {
+	border: none;
+}
+.post.recent {
+	padding: 1em;
+	border-left: 4px solid #f26c4f;
+	height: 10em;
+}
+.post.notSoRecent {
+	padding: 0.7em;
+	border-left: 4px solid #8f8f8f;
+	height: 7em;
+}
+.post.notRecent {
+	padding: 0.5em;
+	border-left: 4px solid #d9d9d9;
+	height: 5em;
+}
+.post > h3 {
+	overflow: hidden;
+    width: 95%;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	color: black;
+	margin-bottom: 0.5em;
+}
+.readMore {
+	text-align: center;
+	padding: 0.5em 0;
+}
+.readMore > div, .readMore > img {
+	color: #bdbdbd;
+	margin: 0.3em 0;
+	font-weight: bold;
+	font-size: 18pt;
+}
+.unknownmomentum {
+	background: white;
+}
+.unknownmomentum > div {
+	font-weight: bold;
+	display: inline-block;
+	color: #f26c4f;
+	border-right: 1px solid #d3d3d3;
+	margin: 1em 0;
+	padding: 0 1em;
+}	
+.unknownmomentum :first-child {
+	color: #d3d3d3;
+	border-left: none;
+}
+.post.detailed {
+	position: relative;
+}
+.post.detailed > h2 {
+	color: #707070;
+}
+.lePlusButton {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0.5em 0.9em;
+	opacity: 0.5;
+	background: gray;
+	color: white;
+	font-weight: bold;
+}
+.detailed a {
+	color: red;
+}
+.detailed > .inform {
+	background: #efefef;
+	border-top: 2px groove #e6e6e6;
+	border-bottom: 2px groove #e6e6e6;
+	padding: 1em;
+}
+.post.detailed > .inform > div {
+	display: inline-block;
+	font-weight: bold;
+}
+.detailed > .inform > .likes {
+	float: right;
+}
+.withImage .mainImage {
+	width: 100%;
+}
+.withImage .control {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.withImage .control > div {
+	display: inline-block;
+	color: white;
+	padding: 0.5em 1em;
+	font-weight: bold;
+}
+.control > .add {
+	background-color: #363339;
+}
+.control > .left {
+	background-color: #f26c4f;
+}
+.withImage p {
+	height: 10%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: bold;
+}
+.bottom {
+	background: #373737;
+	padding: 0 19.6%;
+	color: white;
+}
+.basement {
+	background: #474747;
+}
+.basement > div , .basement > ul , .basement > ul > li {
+	color: white;
+	display: inline-block;
+}
+.basement > ul {
+	float: right;
+}
+.basement > ul > li {
+	border-right: 2px solid gray;
+	padding: 0 2em;
+}
+.basement li.active > span {
+	border-bottom: solid 4px #f26c4f;
+	padding: 0 0 2.19ex 0;
+}
+.links {
+	margin-top: 3em;
+}
+.links > div {
+	display: inline-block;
+	margin: 0 1em;
+}
+.postscriptum {
+	margin-top: 1em;
+	color: #7e7e7e;
+	padding-bottom: 6em;
+}
+.icons {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(samples.png);
+}
+.icons.star {
+	background-position: -200px;
+}
+.icons.halfstar {
+	background-position: -220px;
+}
+.icons.whitestar {
+	background-position: -300px;
+}
+.icons.glaces {
+	width: 40px;
+	background-position: -240px;
