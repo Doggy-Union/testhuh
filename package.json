@@ -12,5 +12,6 @@
   },
   "scripts": {
     "start": "web.js"
-  }
+  },
+  "main": "web.js"
 }
