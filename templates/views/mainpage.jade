@@ -1,9 +1,0 @@
-﻿extends ../layouts/base
-block content
-	ul
-		-for(var i = 0; i < res.length; i++) {
-			li
-				h1=res[i].title
-				img(src=res[i].preview)
-				a(href=res[i].link) link
-		-}
