@@ -6,11 +6,13 @@ html
     link(href='https://fonts.googleapis.com/css?family=Poiret+One', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Roboto:100', rel='stylesheet')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title The Named Team
+    meta(name='theme-color' content='#185de7')
+    link(rel="icon" sizes="192x192" href="favicon.png")
+    title DevShift
   body
     header
       .button
-      h1 The Named Team
+      h1 DevShift
       h2 web-developers team
       .persons
         .item1
@@ -30,8 +32,8 @@ html
           .swiper-wrapper
             for work in res
               .swiper-slide
+                .preview(style="background-image: url(#{work.preview})")
                 a(href="#{work.link}")
-                  .preview(style="background-image: url(#{work.preview})")
                   span.description=work.title
           .swiper-button-prev
           .swiper-button-next
@@ -53,9 +55,9 @@ html
     .hider
       .menu
         .menuElement
-          a(href='#footer') Contacts
-        .menuElement Portfolio
-        .menuElement Blog(in dev)
+          a(href='#contacts') Contacts
+        .menuElement
+          a(href='#portfolio') Portfolio
     script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js')
     script.
       var buttons = document.querySelector('div.button');
@@ -75,8 +77,6 @@ html
       hider.style.display = 'none';
       }, 200);
       }
-      document.documentElement.style.overflow = 'auto';
-      document.body.scroll = "yes"; // for IE
       }
       function showMenu() {
       hider.style.display = 'flex';
@@ -84,8 +84,6 @@ html
       setTimeout(function() {
       hider.style.background = 'rgba(0, 0, 0, 0.9)';
       }, 10);
-      document.documentElement.style.overflow = 'hidden';
-      document.body.scroll = "no"; // for IE
       }
       buttons.addEventListener('click', showMenu);
     script.
