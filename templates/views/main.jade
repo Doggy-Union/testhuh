@@ -24,6 +24,7 @@ html
           | Web development is the constantly, fastly evolving field of IT where following the new standards is actually important. But it has to be done very carefully. We choose the technologies that bring simplicity, speed and reliability to the products, considering about support among the users. Web development for us is not just work but our favourite hobby :)
     .content
       .portfolio
+        a(id="portfolio")
         h2
           | Some of
           br
@@ -33,11 +34,12 @@ html
             for work in res
               .swiper-slide
                 .preview(style="background-image: url(#{work.preview})")
-                a(href="#{work.link}")
+                a(href="#{work.link}" target="_blank")
                   span.description=work.title
           .swiper-button-prev
           .swiper-button-next
       .contacts
+        a(id="contacts")
         h2 Contacts
         .contactsTable
           .icons
