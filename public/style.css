@@ -210,7 +210,7 @@ header {
 
   body {
     font-size: 14px; } }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 465px) {
   body {
     font-size: 8px; }
     body header .persons .item1, body header .persons .item2 {
