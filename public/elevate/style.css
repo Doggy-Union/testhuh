@@ -1,0 +1,169 @@
+﻿body {
+	background-color: #f2f2f2;
+	font-family: Open Sans;
+	margin: 0;
+	padding: 0;
+	transition: scroll 1s;
+}
+header {
+	z-index: 10;
+	top: 0;
+	margin-top: 0;
+	padding: 0.5em 0;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.20);
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+nav a {
+	cursor: pointer;
+	display: block;
+	width: 24.5%;
+	text-align: center;
+	padding: 1em 0em;
+	border: 1px solid white;
+	transition: border 0.5s;
+}
+nav a:hover {
+	border: 1px solid gray;
+}
+nav a:visited, nav > a  {
+	text-decoration: none;
+	color: inherit;
+}
+main {
+	color: gray;
+	margin: 0 25% 0 25%;
+	padding-top: 4em;
+}
+article {
+	position: relative;
+	border: 1px solid #f2f2f2;
+	margin: 2em 0;
+	background-color: white;
+}
+.name {
+	margin: 1em;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	padding: 3em;
+	display: block;
+	font-size: 18pt;
+	
+}
+.name > h1 {
+	letter-spacing: 2px;
+	font-size: 44pt;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.about {
+	padding: 2em;
+}
+.chess {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.chess > li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24pt;
+	width: 33.3333%;
+	height: 30.95%;
+}
+.chess > li > p {
+	margin: 0;
+}
+.chess > li > img {
+	width: 100%;
+}
+.forgood {
+	width: 100%;
+}
+h1 {
+	font-weight: 200;
+}
+.form {
+	margin: 0 5%;
+}
+form {
+	font-size: 16pt;
+	text-align: right;
+}
+input[placeholder="Name"], input[type="email"] {
+	float: left;
+	width: 49%;
+}
+input[placeholder="Name"] {
+	margin-right: 2%;
+}
+form > input, textarea {
+	font-size: 16pt;
+	margin: 0.4em 0;
+	width: 100%;
+}
+input::placeholder, textarea::placeholder {
+	font-weight: 200;
+	font-family: Open Sans;
+}
+textarea {
+	min-height: 5em;
+	max-width: 100%;
+	min-width: 100%;
+}
+form > input[type="submit"] {
+	cursor: pointer;
+	background: white;
+	font-family: Open Sans;
+	font-size: 15pt;
+	color: gray;
+	border: 1px solid gray;
+	padding: 0.5em 1em;
+	transition: background 1s, color 1s;
+	display: inline-block;
+	width: 20%;
+}
+form > input[type="submit"]:hover {
+	background: darkgray;
+	color: white;
+}
+footer {
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+}
+ul {
+	list-style-type: none;
+}
+.pointer {
+	position: absolute;
+	top: -6em;
+}
+.swiper-container {
+	height: 12em;
+	width: 90%;
+}
+.swiper-pagination-bullet {
+	background: white !important;
+	opacity: 1 !important;
+	border: 1px solid gray;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: gray !important;
+}
